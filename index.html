@@ -6,8 +6,28 @@
 <title>Road Racer</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#111111">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    overflow: hidden;
+    touch-action: none;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  canvas {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+</style>
 </head>
-<body style="margin:0;background:#111;overflow:hidden;touch-action:none">
+<body>
 <canvas id="c"></canvas>
 <script>
 const c=document.getElementById("c"),ctx=c.getContext("2d");
