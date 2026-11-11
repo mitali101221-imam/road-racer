@@ -21,8 +21,10 @@
   }
   canvas {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 400px !important;
+    height: 700px !important;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
     background: #2a7a2a;
   }
@@ -297,6 +299,8 @@ function addTrees(y){
   });
 }
 function start(){
+  c.width = W;
+  c.height = H;
   car={x:W/2,y:H-170,w:40,h:70};
   enemies=[];coins=[];powers=[];trees=[];
   score=0;speed=5;over=false;lineY=0;shield=0;treeT=0;sigT=0;
